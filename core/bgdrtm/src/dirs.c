@@ -87,7 +87,7 @@ char * dir_path_convert( const char * dir )
  *
  */
 
-static const char * cur_path = "ux0:/data/sorr/";
+static const char * cur_path = "app0:/";
 
 char * dir_current( void )
 {

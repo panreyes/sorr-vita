@@ -150,11 +150,8 @@ int main( int argc, char *argv[] )
     standalone = 1;
 #endif
 
-#ifdef TARGET_VITA
-#else
     /* add binary path */
     file_addp( appexepath );
-#endif
 
 #ifdef TARGET_WII
     // Initialize the Wii FAT filesystem, check stuff
@@ -197,9 +194,7 @@ int main( int argc, char *argv[] )
 #endif
 
 #ifdef TARGET_VITA
-    file_addp( "ux0:/data/sorr/" );
-    file_addp( "app0:/" );
-    filename = "sorr.dat";
+    filename = "main.dat";
 #endif
 
 
